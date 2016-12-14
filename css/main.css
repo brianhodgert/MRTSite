@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Teko";
+    src: url(href="https://fonts.googleapis.com/css?family=Teko") format("truetype");
+}
+html, body {
+	height: 100%;
+
+}
+
+body {
+	margin:0;
+	padding: 0;
+	font-family: helvetica;
+
+	
+}
+
+/************Container******************/
+#container{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	position: relative;
+	margin:auto;
+
+
+}
+
+/************Header Section*************/
+#header{
+	flex-grow: 0;
+	flex-shrink: 1;
+	background-color: #00a4d3;
+	font-family: 'Teko', sans-serif;
+	align-items: center;
+	margin: 0px;
+	padding: 5px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #000000;
+	}
+
+#header h1{
+	font-size: 60px;
+	margin:10px;
+	margin-left: 150px;
+}
+
+#header img{
+	float: left;
+	max-height: 100px;
+}
+
+/***************Menus*************/
+#globalMenu{
+	position: absolute;
+	right: 20px;
+}
+
+#leftMenu{
+	position: absolute;
+
+}
+
+
+/**************Content*************/
+#content{
+	flex-grow: 1;
+	flex-shrink: 0;
+	display: flex;	
+}
+
+#col1{
+	flex-grow: 1;
+	flex-shrink: 1;
+	max-width: 125px;
+	padding: 15px;
+	background-color: #c9f1fd;
+	border-style: solid;
+	border-top: none;	
+	border-color: #000000;
+	position: relative;
+
+}
+
+#col2{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: top;
+
+}
+
+
+
+#col3{
+	flex-grow: 1;
+	flex-shrink: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+#content img{
+	height: 350px;
+
+}
+
+.equipmentThumb{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 200px;
+
+}
+
+
+/*************Footer ************/
+#footer{
+
+	flex: 0 0 auto;
+	position: relative;
+
+	border: 0px;
+	display: flex;
+	align-content: center;
+
+}
+
+.footerCol{
+	flex:1 1 auto;
+	line-height: 30px;
+	margin: 3px;
+	height: 30px;
+	color: #fff;
+	background-color: #000;
+
+
+}
+
+#terms {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    background-color: #000;
+    
+    
+}
+
+.footerCol:hover #terms{
+	display: block;
+	width: 100%;
+}
+
+
+
+/**************Default Unordered List Format ***********/
+.ulMenu ul{
+		list-style-type: none;
+		padding: 0px;
+}
+.ulMenu li{
+	max-width: 125px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 5px;
+	background-color: #ddd;
+	font-family: helvetica, sans-serif;
+	box-shadow: 10px 10px 5px #888888;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.ulMenu a{
+	text-decoration: none;
+	color: #000;
+}
+
