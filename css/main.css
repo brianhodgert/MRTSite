@@ -139,6 +139,7 @@ body {
 	height: 30px;
 	color: #fff;
 	background-color: #000;
+	text-align: center;
 
 
 }
@@ -183,8 +184,3 @@ body {
 }
 
 /**************Misc.****************************/
-.soft{
-	color:#050505;
-
-
-/*More changes*/
