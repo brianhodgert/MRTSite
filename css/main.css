@@ -93,7 +93,7 @@ body {
 	flex-grow: 1;
 	display: flex;
 	justify-content: space-around;
-	align-items: top;
+	align-items: center;
 
 }
 
@@ -158,6 +158,11 @@ body {
 	width: 100%;
 }
 
+.footerCol a{
+	text-decoration: none;
+	color: #fff;
+}
+
 
 
 /**************Default Unordered List Format ***********/
@@ -176,6 +181,8 @@ body {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #000000;
+	border-radius: 5px;
+	text-align: center;
 }
 
 .ulMenu a{

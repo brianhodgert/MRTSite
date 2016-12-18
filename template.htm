@@ -1,69 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<script src="w3data.js">
 	
-	<title>Manitoba Renal Technology</title>		
-	<meta charset="utf-8">
-	<meta name="viewport" content="device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/3.0.3/normalize.min.css">	
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+</script>	
+
+<div w3-include-html="headInfo.htm"></div>	
 
 </head>
+
 <body>
 <div id="container">
-		
-		<div id="globalMenu" class="ulMenu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="homePatients.htm"><b>Home Patients</b></a></li>
-				<li><a href="facilities.htm">Facilities</a></li>
-			</ul>
-		</div>
+	<!-- *********************************************************************Header Section ************************************************************************-->
 
-		<div id="header">
-			<img src="./images/MRTLogo.png">
-			<h1>Manitoba Renal Technology</h1>
-		</div>
-<!-- ********************************************************************Content Section***************************************************************************************** -->
-		<div id="content">
-			<div id="col1">
-				<div id="leftMenu" class="ulMenu">
-				<ul>
-					<li><a href="#">Address</a></li>
-					<li><a href="#">Phone</a></li>
-					<li><a href="#">Fax</a></li>
-				</ul>
+	<div w3-include-html="header.htm"></div>	
+
+	<!-- ********************************************************************Content Section************************************************************************ -->
+			<div id="content">
+				<div id="col1">
+					<div id="leftMenu" class="ulMenu">
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					</div>
+
+				</div>
+				<div id="col2">
+
+				</div>
+				
+
+				<<div id="col3">
+
+
 				</div>
 
-			</div>
-			<div id="col2">
-			<div id="contactForm">
-			<form method="post" action="http://sixyooz.com/mailReceived.htm" name="contactForm">
-				Name:<br/><input type="text" name="personName" value="First and Last Name" class="soft"><br/><br/>
-				Email:<br/><input type="text" name="personEmail" value="yourEmail@yourdomain.abc" class="soft"><br/><br/>
-				Question or Comment:<br/><textarea name="comment" cols="100" rows="20" class="soft"></textarea><br/><br/>
-				<input type="submit" value="Submit">
-			</form>
-			</div>
-			</div>
 			
 
-			<!-- <div id="col3"> -->
+			</div>
+	<!--************************************************************************Footer Section*********************************************************************** -->
+	<div w3-include-html="footer.htm"></div>
 
 
-			<!-- </div> -->
-
-		
-
-		</div>
-<!--************************************************************************Footer Section**********************************************************************************************  -->
-		<div id="footer">	
-			<p><div class="footerCol">Privacy Policy</div><div class="footerCol">Terms of Use</div><div class="footerCol">Contact</div></p>
-		</div>
 </div>
 
+<script>
+	w3IncludeHTML();
+</script>
 
 </body>
 </html>

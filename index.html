@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Manitoba Renal Technology</title>		
-	<meta charset="utf-8">
-	<meta name="viewport" content="device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/3.0.3/normalize.min.css">	
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+
+<script src="./lib/w3data.js"></script>	
+
+<div w3-include-html="headInfo.htm"></div>	
 
 </head>
+
 <body>
 <div id="container">
-		
-		<div id="globalMenu" class="ulMenu">
-			<ul>
-				<li><a href="index.html"><b>Home</b></a></li>
-				<li><a href="homePatients.htm">Home Patients</a></li>
-				<li><a href="facilities.htm">Facilities</a></li>
-			</ul>
-		</div>
+<!-- *********************************************************************Header Section ************************************************************************-->
 
-		<div id="header">
-			<img src="./images/MRTLogo.png">
-			<h1>Manitoba Renal Technology</h1>
-		</div>
+	<div w3-include-html="header.htm"></div>	
+
+<!-- ********************************************************************Content Section************************************************************************ -->
+		
+		<style type="text/css">
+			#homeLink{
+				font-weight: bold;
+				font-size: 200%;
+			}
+		</style>
 
 		<div id="content">
 			<!-- <div id="col1"> -->
 
 			<!-- </div> -->
-			<div id="col2"><img src="./images/MRTLogo.png"></div>
-			<div id="col3">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet, erat et dapibus posuere, ex velit convallis enim, et finibus enim lorem nec sapien. Nunc tempus eu ligula at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut orci at velit pellentesque tincidunt quis auctor lorem. Pellentesque pellentesque condimentum efficitur. Aliquam erat volutpat. Maecenas quis velit scelerisque, ultrices mauris sit amet, tempus neque. Sed luctus urna sapien, vel vestibulum est rutrum quis. Sed facilisis egestas enim, id cursus ex commodo et. Phasellus scelerisque leo ligula, varius efficitur turpis facilisis et. Maecenas bibendum quam massa, posuere placerat dolor gravida eget. Nunc sed velit sit amet magna feugiat suscipit.</p>
-
+			<div id="col2" style="align-items: center;">
+			<img src="./images/MRTLogo.png">
+			<p>Welcome to the Manitoba Renal Technology Support Site.  Click the links to find useage and support information.</p>
+			</div>
+			
+			<div id="col3" style="align-items: center;">
+			
 			</div>
 
 		</div>
-		
-		<div id="footer">	
-			<p><div class="footerCol">Privacy Policy</div><div class="footerCol">Terms of Use</div><div class="footerCol">Contact</div></p>
-		</div>
+<!--************************************************************************Footer Section*********************************************************************** -->
+	<div w3-include-html="footer.htm"></div>
+
+
 </div>
 
+<script>
+	w3IncludeHTML();
+</script>
 
 </body>
 </html>

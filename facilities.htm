@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Manitoba Renal Technology</title>		
-	<meta charset="utf-8">
-	<meta name="viewport" content="device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/3.0.3/normalize.min.css">	
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+
+<script src="w3data.js"></script>	
+
+<div w3-include-html="headInfo.htm"></div>	
 
 </head>
+
 <body>
 <div id="container">
-		
-		<div id="globalMenu" class="ulMenu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="homePatients.htm">Home Patients</a></li>
-				<li><a href="facilities.htm"><b>Facilities</b></a></li>
-			</ul>
-		</div>
+	<!-- *********************************************************************Header Section ************************************************************************-->
 
-		<div id="header">
-			<img src="./images/MRTLogo.png">
-			<h1>Manitoba Renal Technology</h1>
-		</div>
+	<div w3-include-html="header.htm"></div>	
+
+	<!-- ********************************************************************Content Section************************************************************************ -->
+		<style type="text/css">
+			#facilitiesLink{
+				font-weight: bold;
+				font-size: 150%;
+			}
+		</style>
+
 
 		<div id="content">
 			<div id="col1">
@@ -52,12 +48,15 @@
 		
 
 		</div>
-		
-		<div id="footer">	
-			<p><div class="footerCol">Privacy Policy</div><div class="footerCol">Terms of Use</div><div class="footerCol">Contact</div></p>
-		</div>
+	<!--************************************************************************Footer Section*********************************************************************** -->
+	<div w3-include-html="footer.htm"></div>
+
+
 </div>
 
+<script>
+	w3IncludeHTML();
+</script>
 
 </body>
 </html>
