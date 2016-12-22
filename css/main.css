@@ -74,7 +74,7 @@ body {
 }
 
 #globalMenu li{
-	max-width: 125px;
+	min-width: 125px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 	padding: 5px;
@@ -112,8 +112,10 @@ body {
 #col1{
 	flex-grow: 1;
 	flex-shrink: 1;
-	max-width: 125px;
-	padding: 15px;
+
+	min-width: 150px;
+	max-width: 150px;
+	/*padding: 15px;*/
 	background-color: #c9f1fd;
 	border-style: solid;
 	border-top: none;	
@@ -124,47 +126,89 @@ body {
 
 #col2{
 	flex-grow: 1;
+	flex-shrink: 1;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding-left: 50px;
 
 }
 
+#col2 h3{
+	text-align: center;
+}
+
+#col2 ul{
+margin-left: auto;
+margin-right: auto;
+}
 
 
 
 #col3{
 	flex-grow: 1;
 	flex-shrink: 1;
+	max-width: 60%;
 	display: flex;
 	flex-direction: column;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-#content img{
+/*#content img{
 	height: 350px;
 
-}
+}*/
 
 .equipmentThumb{
+
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: space-between;
 	max-width: 200px;
+	height: 90%;
+
 
 }
 
-.equipmentThumb h3{
-	flex-grow: 0;
-	max-height: 5px;
+.equipmentThumb img{
+
+	max-width: 100%;
+	max-height: 300px;
+
 }
 
+
+.equipmentThumb ul{
+		list-style-type: none;
+		padding: 0px;
+}
+
+.equipmentThumb li{
+	max-width: 125px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 5px;
+	background-color: #ddd;
+	font-family: helvetica, sans-serif;
+	box-shadow: 10px 10px 5px #888888;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.equipmentThumb a{
+	text-decoration: none;
+	color: #000;
+}
 
 /*************Footer ************/
 #footer{
 
 	flex: 0 0 auto;
 	position: relative;
-
 	border: 0px;
 	display: flex;
 	align-content: center;
@@ -210,6 +254,8 @@ body {
 		padding: 0px;
 }
 .ulMenu li{
+	position: relative;
+
 	max-width: 125px;
 	margin-top: 5px;
 	margin-bottom: 10px;
@@ -229,4 +275,12 @@ body {
 	color: #000;
 }
 
+.subMenu li{
+	position: relative;
+	left: 30px;
+	background: #fff;
+
+
+
+}
 /**************Misc.****************************/
