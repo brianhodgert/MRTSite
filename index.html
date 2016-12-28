@@ -4,7 +4,14 @@
 
 <script src="./lib/w3data.js"></script>	
 
-<div w3-include-html="headInfo.htm"></div>	
+<!-- <div w3-include-html="headInfo.htm"></div>	 -->
+	<title>Manitoba Renal Technology</title>		
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/3.0.3/normalize.min.css">	 -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
 
 </head>
 
@@ -12,7 +19,19 @@
 <div id="container">
 <!-- *********************************************************************Header Section ************************************************************************-->
 
-	<div w3-include-html="header.htm"></div>	
+	<!-- <div w3-include-html="header.htm"></div> -->
+	<div id="globalMenu">
+		<ul>
+			<a href="homePatients.htm"><li class="ulMenu" id="homePatientLink">Home Patients</li></a>
+			<a href="facilities.htm"><li class="ulMenu" id="facilitiesLink">Facilities</li></a>
+			<a href="contact.htm"><li class="ulMenu" id="contactLink">Contact</li></a>
+		</ul>
+	</div>
+
+	<div id="header">
+		<a href="index.html"><img src="./images/MRTLogo.png"></a>
+		<h1>Manitoba Renal Technology</h1>
+	</div>	
 
 <!-- ********************************************************************Content Section************************************************************************ -->
 
@@ -39,7 +58,12 @@
 
 		</div>
 <!--************************************************************************Footer Section*********************************************************************** -->
-	<div w3-include-html="footer.htm"></div>
+		<div id="footer">	
+			<div class="footerCol"><a href="privacyPolicy.htm">Privacy Policy</a></div>
+			<div class="footerCol"><a href="termsOfUse.htm">Terms of Use</a></div>
+			<div class="footerCol"><a href="contact.htm">Contact</a></div>
+		</div>
+	<!-- <div w3-include-html="footer.htm"></div> -->
 
 
 </div>
